@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-
 }
 
 header {
@@ -17,11 +16,7 @@ header {
     background-image: url(../img/img.png);
     background-position: -50px 10px;
     background-repeat: no-repeat;
-
-
 }
-
-
 
 .logo_img {
     padding: 50px 0 0 140px;
@@ -88,8 +83,7 @@ header {
 
 .project_menu {
     margin-top: 150px;
-    margin-left: 110px;
-
+    margin-left: 80px;
 }
 
 .project_menu li {
@@ -100,6 +94,23 @@ header {
     text-transform: uppercase;
 }
 
+.project_menu li:hover::before {
+    content: url(../img/arrow\ icon.png);
+}
+
+.project_menu li:before {
+    position: absolute;
+    left: 80px;
+}
+
+#active::before {
+    content: url(../img/arrow\ icon.png);
+}
+
+#active a {
+    color: #000;
+}
+
 .project_menu a {
     text-decoration: none;
     color: #fff;
@@ -108,8 +119,6 @@ header {
 .project_menu a:hover {
     color: #000;
 }
-
-
 
 .project_title {
     display: block;
