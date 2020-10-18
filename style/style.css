@@ -59,7 +59,7 @@ header {
     color: #fff;
     font-size: 13px;
     text-transform: uppercase;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 .contact {
@@ -81,6 +81,11 @@ header {
     grid-template-rows: 499px 466px;
 }
 
+.first_projects {
+    background-color: #ebb240;
+    background-image: url(../img/line.png);
+}
+
 .project_menu {
     margin-top: 150px;
     margin-left: 80px;
@@ -92,6 +97,7 @@ header {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
+    line-height: 18px;
 }
 
 .project_menu li:hover::before {
@@ -128,15 +134,9 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.1px;
     margin-top: 80px;
-    margin-left: 200px;
+    margin-left: 170px;
 }
 
-
-.first_projects {
-    background-color: #ebb240;
-    background-image: url(../img/line.png);
-
-}
 
 .fondue {
     background-color: #fefefe;
@@ -144,6 +144,52 @@ header {
     background-position: -50px 0;
     background-repeat: no-repeat;
 }
+
+.fondue_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px 0 0 10px;
+}
+
+.block_title p {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* .block_title h3 {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+} */
+
+.fondue_button button {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.fondue_button button::before {
+    content: url(../img/arrowyellow.png);
+    padding-right: 15px;
+}
+
+.fondue_like button {
+    width: 29px;
+    height: 26px;
+    background-image: url(../img/heart.png);
+    background-repeat: no-repeat;
+}
+
+.likes {
+    display: block;
+}
+
+
 
 .projects_aside {
     display: grid;
