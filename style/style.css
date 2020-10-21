@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none !important;
+}
+
 header {
     display: grid;
     grid-template-columns: 69% 31%;
@@ -141,31 +162,48 @@ header {
 .fondue {
     background-color: #fefefe;
     background-image: url(../img/fondu.png);
-    background-position: -50px 0;
+    background-position: -30px 0;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .fondue_content {
+    width: 50%;
     display: flex;
+    margin: 40px 0 0 40px;
     flex-direction: column;
-    align-items: center;
-    margin: 90px 0 0 10px;
+    align-items: left;
+    font-size: 12px;
+    font-weight: 400;
+    /* margin: 90px 0 0 10px; */
 }
 
-.block_title p {
-    text-transform: uppercase;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 16px;
+.block_subtitle {
     font-weight: 600;
 }
 
+.block_title h3 {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
 
+}
+
+.fondue_button {
+    padding-top: 60px;
+    padding-left: 35px;
+
+}
 
 .fondue_button button {
     text-transform: uppercase;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 19px;
     font-weight: 300;
+    color: black;
+    border: 0px solid #fff;
+    background-color: #fff;
 }
 
 .fondue_button button::before {
@@ -173,15 +211,46 @@ header {
     padding-right: 15px;
 }
 
+/* .fondue_button button:hover {
+    border: 0px solid #fff;
+    background-color: #fff;
+    color: #000;
+} */
+
+.btn:focus {
+    border: 0px solid #fff;
+    background-color: #fff;
+    color: #000;
+
+}
+
+.fondue_like {
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
 .fondue_like button {
+    border: 0px solid #fff;
+    background-color: #fff;
+
+}
+
+.fondue_like svg {
     width: 29px;
     height: 26px;
-    background-image: url(../img/heart.png);
-    background-repeat: no-repeat;
+}
+
+.fondue_like svg:hover {
+    fill: red;
 }
 
 .likes {
     display: block;
+    padding-top: 10px;
+    padding-left: 4px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    color: red;
 }
 
 
